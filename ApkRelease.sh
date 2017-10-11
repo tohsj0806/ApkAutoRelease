@@ -10,9 +10,7 @@ echo "▼▼▼▼▼▼apk build start▼▼▼▼▼▼▼▼▼▼▼▼▼�
 ./gradlew assemblerelease 
 echo "▲▲▲▲▲▲apk build finish▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲" 
 echo "▼▼▼▼▼▼scp apk start▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼▼"  
-scp -P 7002 build/outputs/apk/XPostManager-release.apk root@211.156.195.19:/yygk/ggwdata/data/app
-#scp -P 7002 test.txt root@211.156.195.19:/yygk/ggwdata/data/app
-#scp  build/outputs/apk/XPostManager-release.apk src
+scp -P port build/outputs/apk/XPostManager-release.apk root@host:/yygk/ggwdata/data/app
 echo "▲▲▲▲▲▲ascp apk finish▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲" 
 echo "▼▼▼▼▼▼update server version start▼▼▼▼" 
 python updateVersion.py
